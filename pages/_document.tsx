@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import Link from "next/link";
 
 
 export default function Document() {
@@ -21,9 +22,9 @@ export default function Document() {
     {/* <!-- header --> */}
     <header className="py-4 shadow-sm bg-white">
         <div className="container flex items-center justify-between">
-            <a href="index.html">
+            <Link href="/">
                 <img src="assets/images/logo.svg" alt="Logo" className="w-32"/>
-            </a>
+            </Link>
 
             <div className="w-full max-w-xl relative flex">
                 <span className="absolute left-4 top-3 text-lg text-gray-400">
@@ -107,12 +108,12 @@ export default function Document() {
 
             <div className="flex items-center justify-between flex-grow md:pl-12 py-5">
                 <div className="flex items-center space-x-6 capitalize">
-                    <a href="index.html" className="text-gray-200 hover:text-white transition">Home</a>
-                    <a href="pages/shop.html" className="text-gray-200 hover:text-white transition">Shop</a>
-                    <a href="#" className="text-gray-200 hover:text-white transition">About us</a>
-                    <a href="#" className="text-gray-200 hover:text-white transition">Contact us</a>
+                    <Link href="/" className="text-gray-200 hover:text-white transition">Home</Link>
+                    <Link href="/shop" className="text-gray-200 hover:text-white transition">Shop</Link>
+                    <Link href="/about" className="text-gray-200 hover:text-white transition">About us</Link>
+                    <Link href="/contact" className="text-gray-200 hover:text-white transition">Contact us</Link>
                 </div>
-                <a href="pages/login.html" className="text-gray-200 hover:text-white transition">Login</a>
+                <Link href="/login" className="text-gray-200 hover:text-white transition">Login</Link>
             </div>
         </div>
     </nav>
