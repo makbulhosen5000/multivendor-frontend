@@ -23,7 +23,7 @@ export default function Document() {
     <header className="py-4 shadow-sm bg-white">
         <div className="container flex items-center justify-between">
             <Link href="/">
-                <img src="assets/images/logo.svg" alt="Logo" className="w-32"/>
+              <img src="/assets/images/logo.svg" alt="Logo" className="w-32" />
             </Link>
 
             <div className="w-full max-w-xl relative flex">
@@ -34,11 +34,11 @@ export default function Document() {
                     className="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none hidden md:flex"
                     placeholder="search"/>
                 <button
-                    className="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition hidden md:flex">Search</button>
+                    className="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition hidden md:flex md:justify-center md:items-center">Search</button>
             </div>
 
             <div className="flex items-center space-x-4">
-                <a href="#" className="text-center text-gray-700 hover:text-primary transition relative">
+                <Link href="#" className="text-center text-gray-700 hover:text-primary transition relative">
                     <div className="text-2xl">
                         <i className="fa-regular fa-heart"></i>
                     </div>
@@ -46,8 +46,8 @@ export default function Document() {
                     <div
                         className="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">
                         8</div>
-                </a>
-                <a href="#" className="text-center text-gray-700 hover:text-primary transition relative">
+                 </Link>
+                <Link href="#" className="text-center text-gray-700 hover:text-primary transition relative">
                     <div className="text-2xl">
                         <i className="fa-solid fa-bag-shopping"></i>
                     </div>
@@ -55,13 +55,13 @@ export default function Document() {
                     <div
                         className="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">
                         2</div>
-                </a>
-                <a href="#" className="text-center text-gray-700 hover:text-primary transition relative">
+                 </Link>
+                <Link href="#" className="text-center text-gray-700 hover:text-primary transition relative">
                     <div className="text-2xl">
                         <i className="fa-regular fa-user"></i>
                     </div>
                     <div className="text-xs leading-3">Account</div>
-                </a>
+                 </Link>
             </div>
         </div>
     </header>
@@ -79,30 +79,30 @@ export default function Document() {
                 {/* <!-- dropdown --> */}
                 <div
                     className="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
-                    <a href="#" className="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                    <Link href="#" className="flex items-center px-6 py-3 hover:bg-gray-100 transition">
                         <img src="assets/images/icons/sofa.svg" alt="sofa" className="w-5 h-5 object-contain"/>
                         <span className="ml-6 text-gray-600 text-sm">Sofa</span>
-                    </a>
-                    <a href="#" className="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                     </Link>
+                    <Link href="#" className="flex items-center px-6 py-3 hover:bg-gray-100 transition">
                         <img src="assets/images/icons/terrace.svg" alt="terrace" className="w-5 h-5 object-contain"/>
                         <span className="ml-6 text-gray-600 text-sm">Terarce</span>
-                    </a>
-                    <a href="#" className="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                     </Link>
+                    <Link href="#" className="flex items-center px-6 py-3 hover:bg-gray-100 transition">
                         <img src="assets/images/icons/bed.svg" alt="bed" className="w-5 h-5 object-contain"/>
                         <span className="ml-6 text-gray-600 text-sm">Bed</span>
-                    </a>
-                    <a href="#" className="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                     </Link>
+                    <Link href="#" className="flex items-center px-6 py-3 hover:bg-gray-100 transition">
                         <img src="assets/images/icons/office.svg" alt="office" className="w-5 h-5 object-contain"/>
                         <span className="ml-6 text-gray-600 text-sm">office</span>
-                    </a>
-                    <a href="#" className="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                     </Link>
+                    <Link href="#" className="flex items-center px-6 py-3 hover:bg-gray-100 transition">
                         <img src="assets/images/icons/outdoor-cafe.svg" alt="outdoor" className="w-5 h-5 object-contain"/>
                         <span className="ml-6 text-gray-600 text-sm">Outdoor</span>
-                    </a>
-                    <a href="#" className="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                     </Link>
+                    <Link href="#" className="flex items-center px-6 py-3 hover:bg-gray-100 transition">
                         <img src="assets/images/icons/bed-2.svg" alt="Mattress" className="w-5 h-5 object-contain"/>
                         <span className="ml-6 text-gray-600 text-sm">Mattress</span>
-                    </a>
+                     </Link>
                 </div>
             </div>
 
@@ -132,15 +132,15 @@ export default function Document() {
                     </p>
                 </div>
                 <div className="flex space-x-5">
-                    <a href="#" className="text-gray-400 hover:text-gray-500"><i
-                            className="fa-brands fa-facebook-square"></i></a>
-                    <a href="#" className="text-gray-400 hover:text-gray-500"><i
-                            className="fa-brands fa-instagram-square"></i></a>
-                    <a href="#" className="text-gray-400 hover:text-gray-500"><i
-                            className="fa-brands fa-twitter-square"></i></a>
-                    <a href="#" className="text-gray-400 hover:text-gray-500">
+                    <Link href="#" className="text-gray-400 hover:text-gray-500"><i
+                            className="fa-brands fa-facebook-square"></i> </Link>
+                    <Link href="#" className="text-gray-400 hover:text-gray-500"><i
+                            className="fa-brands fa-instagram-square"></i> </Link>
+                    <Link href="#" className="text-gray-400 hover:text-gray-500"><i
+                            className="fa-brands fa-twitter-square"></i> </Link>
+                    <Link href="#" className="text-gray-400 hover:text-gray-500">
                         <i className="fa-brands fa-github-square"></i>
-                    </a>
+                     </Link>
                 </div>
             </div>
 
@@ -149,20 +149,20 @@ export default function Document() {
                     <div>
                         <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3>
                         <div className="mt-4 space-y-4">
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Analitycs</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Commerce</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Insights</a>
+                            <Link href="#" className="text-base text-gray-500 hover:text-gray-900 block">Marketing </Link>
+                            <Link href="#" className="text-base text-gray-500 hover:text-gray-900 block">Analitycs </Link>
+                            <Link href="#" className="text-base text-gray-500 hover:text-gray-900 block">Commerce </Link>
+                            <Link href="#" className="text-base text-gray-500 hover:text-gray-900 block">Insights </Link>
                         </div>
                     </div>
 
                     <div>
                         <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Support</h3>
                         <div className="mt-4 space-y-4">
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Pricing</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Documentation</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Guides</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">API Status</a>
+                            <Link href="#" className="text-base text-gray-500 hover:text-gray-900 block">Pricing </Link>
+                            <Link href="#" className="text-base text-gray-500 hover:text-gray-900 block">Documentation </Link>
+                            <Link href="#" className="text-base text-gray-500 hover:text-gray-900 block">Guides </Link>
+                            <Link href="#" className="text-base text-gray-500 hover:text-gray-900 block">API Status </Link>
                         </div>
                     </div>
                 </div>
@@ -170,20 +170,20 @@ export default function Document() {
                     <div>
                         <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3>
                         <div className="mt-4 space-y-4">
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Analitycs</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Commerce</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Insights</a>
+                            <Link href="#" className="text-base text-gray-500 hover:text-gray-900 block">Marketing </Link>
+                            <Link href="#" className="text-base text-gray-500 hover:text-gray-900 block">Analitycs </Link>
+                            <Link href="#" className="text-base text-gray-500 hover:text-gray-900 block">Commerce </Link>
+                            <Link href="#" className="text-base text-gray-500 hover:text-gray-900 block">Insights </Link>
                         </div>
                     </div>
 
                     <div>
                         <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Support</h3>
                         <div className="mt-4 space-y-4">
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Pricing</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Documentation</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">Guides</a>
-                            <a href="#" className="text-base text-gray-500 hover:text-gray-900 block">API Status</a>
+                            <Link href="#" className="text-base text-gray-500 hover:text-gray-900 block">Pricing </Link>
+                            <Link href="#" className="text-base text-gray-500 hover:text-gray-900 block">Documentation </Link>
+                            <Link href="#" className="text-base text-gray-500 hover:text-gray-900 block">Guides </Link>
+                            <Link href="#" className="text-base text-gray-500 hover:text-gray-900 block">API Status </Link>
                         </div>
                     </div>
                 </div>

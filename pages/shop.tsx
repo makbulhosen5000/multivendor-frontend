@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -8,9 +9,10 @@ export default function ShopPage() {
     <>
     {/* <!-- breadcrumb --> */}
     <div className="container py-4 flex items-center gap-3">
-        <a href="../index.html" className="text-primary text-base">
+        <Link href="../index.html" className="text-primary text-base">
             <i className="fa-solid fa-house"></i>
-        </a>
+        </Link>
+        
         <span className="text-sm text-gray-400">
             <i className="fa-solid fa-chevron-right"></i>
         </span>
@@ -176,8 +178,8 @@ export default function ShopPage() {
 
     </div>
     <div className="grid grid-cols-2 gap-4">
-       <a href="#" className="px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Learn more</a>
-       <a href="#" className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Get access <svg className="w-4 h-4 ml-2" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
+       <Link href="#" className="px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Learn more</Link>
+       <Link href="#" className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Get access <svg className="w-4 h-4 ml-2" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></Link>
     </div>
  </div>
 
@@ -350,24 +352,24 @@ export default function ShopPage() {
                         <img src="assets/images/products/product1.jpg" alt="product 1" className="w-full"/>
                         <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                         justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
-                            <a href="#"
+                            <Link href="#"
                                 className="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
                                 title="view product">
                                 <i className="fa-solid fa-magnifying-glass"></i>
-                            </a>
-                            <a href="#"
+                            </Link>
+                            <Link href="#"
                                 className="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
                                 title="add to wishlist">
                                 <i className="fa-solid fa-heart"></i>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="pt-4 pb-3 px-4">
-                        <a href="#">
+                        <Link href="#">
                             <h4 className="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
                                 Guyer
                                 Chair</h4>
-                        </a>
+                        </Link>
                         <div className="flex items-baseline mb-1 space-x-2">
                             <p className="text-xl text-primary font-semibold">$45.00</p>
                             <p className="text-sm text-gray-400 line-through">$55.90</p>
@@ -383,9 +385,9 @@ export default function ShopPage() {
                             <div className="text-xs text-gray-500 ml-3">(150)</div>
                         </div>
                     </div>
-                    <a href="#"
+                    <Link href="#"
                         className="block w-full py-1 text-center text-white bg-primary border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Add
-                        to cart</a>
+                        to cart</Link>
                 </div>
 
                 <div className="bg-white shadow rounded overflow-hidden group">
@@ -393,24 +395,24 @@ export default function ShopPage() {
                         <img src="assets/images/products/product2.jpg" alt="product 1" className="w-full"/>
                         <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                         justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
-                            <a href="#"
+                            <Link href="#"
                                 className="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
                                 title="view product">
                                 <i className="fa-solid fa-magnifying-glass"></i>
-                            </a>
-                            <a href="#"
+                            </Link>
+                            <Link href="#"
                                 className="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
                                 title="add to wishlist">
                                 <i className="fa-solid fa-heart"></i>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="pt-4 pb-3 px-4">
-                        <a href="#">
+                        <Link href="#">
                             <h4 className="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
                                 Guyer
                                 Chair</h4>
-                        </a>
+                        </Link>
                         <div className="flex items-baseline mb-1 space-x-2">
                             <p className="text-xl text-primary font-semibold">$45.00</p>
                             <p className="text-sm text-gray-400 line-through">$55.90</p>
@@ -426,9 +428,9 @@ export default function ShopPage() {
                             <div className="text-xs text-gray-500 ml-3">(150)</div>
                         </div>
                     </div>
-                    <a href="#"
+                    <Link href="#"
                         className="block w-full py-1 text-center text-white bg-primary border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Add
-                        to cart</a>
+                        to cart</Link>
                 </div>
 
                 <div className="bg-white shadow rounded overflow-hidden group">
@@ -436,24 +438,24 @@ export default function ShopPage() {
                         <img src="assets/images/products/product3.jpg" alt="product 1" className="w-full"/>
                         <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                         justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
-                            <a href="#"
+                            <Link href="#"
                                 className="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
                                 title="view product">
                                 <i className="fa-solid fa-magnifying-glass"></i>
-                            </a>
-                            <a href="#"
+                            </Link>
+                            <Link href="#"
                                 className="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
                                 title="add to wishlist">
                                 <i className="fa-solid fa-heart"></i>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="pt-4 pb-3 px-4">
-                        <a href="#">
+                        <Link href="#">
                             <h4 className="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
                                 Guyer
                                 Chair</h4>
-                        </a>
+                        </Link>
                         <div className="flex items-baseline mb-1 space-x-2">
                             <p className="text-xl text-primary font-semibold">$45.00</p>
                             <p className="text-sm text-gray-400 line-through">$55.90</p>
@@ -469,9 +471,9 @@ export default function ShopPage() {
                             <div className="text-xs text-gray-500 ml-3">(150)</div>
                         </div>
                     </div>
-                    <a href="#"
+                    <Link href="#"
                         className="block w-full py-1 text-center text-white bg-primary border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Add
-                        to cart</a>
+                        to cart</Link>
                 </div>
 
                 <div className="bg-white shadow rounded overflow-hidden group">
@@ -479,24 +481,24 @@ export default function ShopPage() {
                         <img src="assets/images/products/product4.jpg" alt="product 1" className="w-full"/>
                         <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                         justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
-                            <a href="#"
+                            <Link href="#"
                                 className="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
                                 title="view product">
                                 <i className="fa-solid fa-magnifying-glass"></i>
-                            </a>
-                            <a href="#"
+                            </Link>
+                            <Link href="#"
                                 className="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
                                 title="add to wishlist">
                                 <i className="fa-solid fa-heart"></i>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="pt-4 pb-3 px-4">
-                        <a href="#">
+                        <Link href="#">
                             <h4 className="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
                                 Guyer
                                 Chair</h4>
-                        </a>
+                        </Link>
                         <div className="flex items-baseline mb-1 space-x-2">
                             <p className="text-xl text-primary font-semibold">$45.00</p>
                             <p className="text-sm text-gray-400 line-through">$55.90</p>
@@ -512,9 +514,9 @@ export default function ShopPage() {
                             <div className="text-xs text-gray-500 ml-3">(150)</div>
                         </div>
                     </div>
-                    <a href="#"
+                    <Link href="#"
                         className="block w-full py-1 text-center text-white bg-primary border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Add
-                        to cart</a>
+                        to cart</Link>
                 </div>
 
                 <div className="bg-white shadow rounded overflow-hidden group">
@@ -522,24 +524,24 @@ export default function ShopPage() {
                         <img src="assets/images/products/product5.jpg" alt="product 1" className="w-full"/>
                         <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                         justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
-                            <a href="#"
+                            <Link href="#"
                                 className="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
                                 title="view product">
                                 <i className="fa-solid fa-magnifying-glass"></i>
-                            </a>
-                            <a href="#"
+                            </Link>
+                            <Link href="#"
                                 className="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
                                 title="add to wishlist">
                                 <i className="fa-solid fa-heart"></i>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="pt-4 pb-3 px-4">
-                        <a href="#">
+                        <Link href="#">
                             <h4 className="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
                                 Guyer
                                 Chair</h4>
-                        </a>
+                        </Link>
                         <div className="flex items-baseline mb-1 space-x-2">
                             <p className="text-xl text-primary font-semibold">$45.00</p>
                             <p className="text-sm text-gray-400 line-through">$55.90</p>
@@ -555,9 +557,9 @@ export default function ShopPage() {
                             <div className="text-xs text-gray-500 ml-3">(150)</div>
                         </div>
                     </div>
-                    <a href="#"
+                    <Link href="#"
                         className="block w-full py-1 text-center text-white bg-primary border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Add
-                        to cart</a>
+                        to cart</Link>
                 </div>
 
                 <div className="bg-white shadow rounded overflow-hidden group">
@@ -565,24 +567,24 @@ export default function ShopPage() {
                         <img src="assets/images/products/product6.jpg" alt="product 1" className="w-full"/>
                         <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                         justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
-                            <a href="#"
+                            <Link href="#"
                                 className="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
                                 title="view product">
                                 <i className="fa-solid fa-magnifying-glass"></i>
-                            </a>
-                            <a href="#"
+                            </Link>
+                            <Link href="#"
                                 className="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
                                 title="add to wishlist">
                                 <i className="fa-solid fa-heart"></i>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="pt-4 pb-3 px-4">
-                        <a href="#">
+                        <Link href="#">
                             <h4 className="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
                                 Guyer
                                 Chair</h4>
-                        </a>
+                        </Link>
                         <div className="flex items-baseline mb-1 space-x-2">
                             <p className="text-xl text-primary font-semibold">$45.00</p>
                             <p className="text-sm text-gray-400 line-through">$55.90</p>
@@ -598,9 +600,9 @@ export default function ShopPage() {
                             <div className="text-xs text-gray-500 ml-3">(150)</div>
                         </div>
                     </div>
-                    <a href="#"
+                    <Link href="#"
                         className="block w-full py-1 text-center text-white bg-primary border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Add
-                        to cart</a>
+                        to cart</Link>
                 </div>
 
 
